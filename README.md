@@ -1,0 +1,1 @@
+In order for the script to work, you should install all libraries from requirements.txt
