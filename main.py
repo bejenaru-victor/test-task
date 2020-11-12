@@ -1,9 +1,17 @@
+import os
 from os import listdir
 
 from PIL import Image, ImageDraw, ImageFont
 
 
 image_types = ['jpg', 'jpeg', 'png']
+
+
+# Creating output folder if doesn't exist
+try:
+	os.makedirs('output-images')
+except OSError as e:
+	pass
 
 # Reading all files in the directory
 for image in listdir('./source-images'):
